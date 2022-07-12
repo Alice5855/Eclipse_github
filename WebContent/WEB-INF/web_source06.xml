@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+	<jsp-config>
+	    <!-- jsp property group은 JSP의 프로퍼티를 포함합니다. -->
+		<jsp-property-group>
+		    <!-- url patter은 프로퍼트를 적용할 JSP 파일의 URL 패턴을 지정합니다. -->
+			<url-pattern>/source06/view/*</url-pattern>
+			<!-- include prelude는 url pattern 태그에 지정한 패턴에 해당하는 JSP 파일의 앞에 삽입할 파일을 지정합니다. -->
+			<include-prelude>/source06/common/varable.jspf</include-prelude>
+			<!-- include coda는 url pattern 태그에 지정한 패턴에
+			해당하는 JSP 파일의 뒤에 삽입할 파일을 지정합니다. -->
+			<include-coda>/source06/common/footer.jspf</include-coda>			
+		</jsp-property-group>
+	</jsp-config>
+
+	
+	
+
+</web-app>
